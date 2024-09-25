@@ -1,8 +1,8 @@
-print "Hello World!!"
+print("Hello World!!")
 
-print 2+3
+print(2+3)
 
 y=5
 x=y+3
 
-print x/5*2
+print(x/5*2)

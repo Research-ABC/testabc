@@ -1,0 +1,21 @@
+name: Release
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: Branch name
+        required: true
+        type: string
+        default: master
+      version:
+        description: Release version
+        required: true
+        type: string
+
+jobs:
+  release:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: poc step
+        run: echo ${{ inputs.branch }} ${{ inputs.version }}
